@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA HERRERO</title>
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon">
+    <!--ANIMATE-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="./img/logo.jpeg" alt="logo"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li class="animate__animated animate__backInDown item1"><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li class="animate__animated animate__backInDown item2"><a href="#nosotros" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li class="animate__animated animate__backInDown item3"><a href="#obras" onclick="seleccionar()">OBRAS</a></li>
+                    <li class="animate__animated animate__backInDown item4"><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+<!--SECCION INICIO-->
+<section id="inicio" class="inicio">
+    <div class="banner">
+        <div class="contain">
+            <h1 class="animate__animated animate__backInDown">CASA HERRERO</h1>
+            <p class="animate__animated animate__backInLeft">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, ipsam.</p>
+        </div>
+    </div>
+</section>
+<!--SECCION NOSOTROS-->
+<section id="nosotros" class="nosotros">
+    <h2>nosotros</h2>
+    <div class="contenedor_nosotros">
+        <p class="text_nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam possimus eligendi dolor, magnam unde minima quisquam molestias itaque consectetur nostrum odio est cum repellat, obcaecati fugiat nam animi natus quod nemo! Veniam repellat eum exercitationem itaque neque, sed quas.</p>
+    </div>
+</section>
+<!--SECCION OBRAS-->
+<section id="obras" class="obras">
+    <h2>obras</h2>
+    <div class="gallery">
+        <div class="gallery_item gallery_item1">
+            <img src="./img/01.jpg" alt="1" class="gallery_img">
+            <div class="gallery_overlay">
+                <span class="gallery_text">ESCRITORIO VINTAGE</span>
+            </div>
+        </div>
+    <!--END-->
+    <div class="gallery_item gallery_item2">
+        <img src="./img/02.jpg" alt="2" class="gallery_img">
+        <div class="gallery_overlay">
+            <span class="gallery_text">COCINA</span>
+        </div>
+    </div>
+<!--END-->
+<div class="gallery_item gallery_item3">
+    <img src="./img/03.jpg" alt="3" class="gallery_img">
+    <div class="gallery_overlay">
+        <span class="gallery_text">MESA RATONA</span>
+    </div>
+</div>
+<!--END-->
+<div class="gallery_item gallery_item4">
+    <img src="./img/04.jpg" alt="4" class="gallery_img">
+    <div class="gallery_overlay">
+        <span class="gallery_text">VENTANA</span>
+    </div>
+</div>
+<!--END-->
+<div class="gallery_item gallery_item5">
+    <img src="./img/05.jpg" alt="5" class="gallery_img">
+    <div class="gallery_overlay">
+        <span class="gallery_text">CAMA</span>
+    </div>
+</div>
+<!--END-->
+<div class="gallery_item gallery_item6">
+    <img src="./img/06.jpg" alt="6" class="gallery_img">
+    <div class="gallery_overlay">
+        <span class="gallery_text">SOFA</span>
+    </div>
+</div>
+<!--END-->
+<div class="gallery_item gallery_item7">
+    <img src="./img/07.jpg" alt="7" class="gallery_img">
+    <div class="gallery_overlay">
+        <span class="gallery_text">BARRA COMEDOR</span>
+    </div>
+</div>
+<!--END-->
+    </div>
+</section>
+<!--SECCION CONTACTO-->
+<section id="contacto" class="contacto">
+    <h2>CONTACTO</h2>
+    <div class="contain_contacto">
+        <div class="formulario">
+            <form action="">
+                <input type="text" placeholder="NOMBRE" required>
+                <input type="email" placeholder="CORREO" required>
+                <input type="text" placeholder="TELEFONO" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="MENSAJE"></textarea>
+                <div class="bot">
+                    <button class="boton">enviar</button>
+                    <button class="boton">borrar</button>
+                </div>
+            </form>
+        </div>
+        <h3 class="red_title">Redes</h3>
+        <div class="redes">
+            <a href="#" class="redes_icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
