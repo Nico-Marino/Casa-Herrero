@@ -11,7 +11,7 @@ html {
 /*ENCABEZADO*/
 .logo img {
     width: 100px;
-    margin-left: 0;
+    margin-left: -70px;
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
 }
 .contenedor-header {
@@ -130,7 +130,7 @@ html {
     margin: auto;
     display: grid;
     align-items: stretch;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 250px;
     justify-self: center;
     justify-content: center;
@@ -148,19 +148,20 @@ html {
 }
 .gallery_item1 {
     grid-column: span 2;
-    grid-row: span 2;
 }
 .gallery_item2 {
+    grid-column: span 2;
     grid-row: span 2;
 }
 .gallery_item3 {
+    grid-column: span 2;
     grid-row: span 2;
 }
 .gallery_item4 {
     grid-column: span 2;
 }
 .gallery_item5 {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 .gallery_item6 {
     grid-column: span 2;
@@ -236,6 +237,7 @@ input, textarea {
 .boton:hover {
     background-color: #CED4DA;
     color: #6C757D;
+    font-weight: 700;
     transition: .5s;
 }
 .red_title {
@@ -324,23 +326,29 @@ input, textarea {
         grid-template-columns: repeat(2, 1fr);
     }
     .gallery_item1 {
-        grid-column: span 1;
+        grid-column: span 2;
         grid-row: span 2;
     }
     .gallery_item2 {
-        grid-row: span 2;
+        grid-column: span 1;
+        grid-row: span 1;
     }
     .gallery_item3 {
-        grid-row: span 2;
+        grid-column: span 1;
+        grid-row: span 1;
     }
     .gallery_item4 {
-        grid-column: span 1;
+        grid-column: span 2;
     }
     .gallery_item5 {
         grid-column: span 1;
     }
     .gallery_item6 {
         grid-column: span 1;
+    }
+    .gallery_item7 {
+        grid-column: span 2;
+        grid-row: span 1;
     }
     #contacto {
         background-color: #fafff9;
@@ -422,7 +430,7 @@ input, textarea {
     }
     #nosotros {
         background-color: #000000;
-        padding: 60px 0 80px 0;
+        padding: 30px 0 80px 0;
     }
     .nosotros h2 {
         color: #fafff9;
@@ -436,6 +444,13 @@ input, textarea {
         color: #fafff9;
         font-size: 1.2rem;
         margin: 0 20px;
+    }
+    .gallery {
+        max-width: 470px;
+        gap: 3px;
+    }
+    .gallery_text {
+        font-size: 1.4rem;
     }
     .gallery_item1 {
         grid-column: span 2;
@@ -453,10 +468,11 @@ input, textarea {
         grid-column: span 1;
     }
     .gallery_item6 {
-        grid-column: span 1;
+        order: 2;
+        grid-column: span 2;
     }
     .gallery_item7 {
-        grid-column: span 2;
+        grid-column: span 1;
     }
     #contacto {
         background-color: #000000;
@@ -468,7 +484,7 @@ input, textarea {
         text-shadow: 5px 5px 5px #CED4DA;
     }
     .contain_contacto {
-        max-width: 300px;
+        max-width: 350px;
         margin: auto;
     }
     input, textarea {
